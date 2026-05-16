@@ -1,0 +1,54 @@
+{
+  "people": [
+    {
+      "name": "Stan O. Abada",
+      "title": "Managing Director",
+      "initials": "SA",
+      "summary": "Multidisciplinary program and engineering leader with 13+ years of experience across project/program management, systems architecture, software & hardware development, and test/quality engineering. Delivered initiatives from $50K to $60M+ by aligning stakeholders, controlling risk, and driving execution discipline.",
+      "strengths": [
+        "End-to-end delivery: scope, schedule, budget, risk",
+        "Systems thinking and architecture-to-operations execution",
+        "Quality engineering discipline and operational readiness",
+        "Cross-functional leadership and stakeholder communication"
+      ],
+      "education": [
+        "MS, Business Analytics",
+        "Certificate, Management Science & Engineering",
+        "MBA",
+        "MS, Electrical Engineering",
+        "BS, Electrical Engineering"
+      ],
+      "badges": [
+        "Program Management",
+        "Engineering Leadership",
+        "Systems & Quality",
+        "Energy & Infrastructure Delivery"
+      ]
+    },
+    {
+      "hideDetails": true
+    },
+    {
+      "name": "Kelvin O. Esemomoh",
+      "title": "Operations Director",
+      "initials": "KE",
+      "summary": "Multidisciplinary Medical equipment specialist. Stakeholders alignment, controlling risk, and driving execution discipline.Kelvin oversees all commercial, risk, subcontractor management and serves as a strategic advisor to executive leadership. Kelvin holds a Bachelor's degree in Business Administration from Fresno Pacific University, California and has worked in the medical field for over 10 years as a Lead Certified Surgical Instrument Coordinator, medical sales and respiratory therapy in the United States.He has 19+ years experience in Business Planning, Business Intelligence, Management & Development.",
+      "strengths": [
+        "End-to-end delivery: scope, schedule, risk",
+        "Medical Equipment Specialist",
+        "Quality Assurance",
+        "Cross-functional leadership and stakeholder communication"
+      ],
+      "education": [
+        "BS, Business Administration",
+        "Certificate of Sterile Processing",
+        "Associate Degree in Allied Health"
+      ],
+      "badges": [
+        "Project Management",
+        "Systems & Quality",
+        "Medical Equipment Specialist"
+      ]
+    }
+  ]
+}

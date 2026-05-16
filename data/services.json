@@ -1,0 +1,38 @@
+{
+  "services": [
+    {
+      "title": "Engineering Services",
+      "page": "pages/engineering.html",
+      "description": "Vinley Global Ltd delivers integrated engineering services across consulting, construction, project management, and renewable energy, enabling clients to plan, execute, and deliver complex projects with confidence.",
+      "tags": [
+        "Engineering",
+        "Construction",
+        "Project Delivery",
+        "Renewable Energy",
+        "Risk Management"
+      ]
+    },
+    {
+      "title": "Medical Equipment Supply & Installations",
+      "page": "pages/med-equipment.html",
+      "description": "Vinley Global Ltd supports healthcare institutions through the supply and installation of medical equipment, ensuring compliance, safe deployment, and readiness for clinical use.",
+      "tags": [
+        "Healthcare",
+        "Medical Equipment",
+        "Compliance",
+        "Hospital Systems"
+      ]
+    },
+    {
+      "title": "Oil & Gas & Marine Logistics",
+      "page": "pages/oil-gas-marine.html",
+      "description": "Vinley Global Ltd provides oil and gas and marine logistics services, including crude trading support, vessel chartering, and coordinated energy transport operations.",
+      "tags": [
+        "Oil & Gas",
+        "Marine Logistics",
+        "Vessel Charter",
+        "Energy Trade"
+      ]
+    }
+  ]
+}

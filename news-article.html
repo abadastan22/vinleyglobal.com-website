@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <nav class="news-breadcrumbs">
+      <a href="/">Home</a> / <a href="/news.html">News</a> /
+      <span data-article-title></span>
+    </nav>
+    <title>Vinley Global Ltd | News Article</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </head>
+
+  <body data-page="news-article">
+    <div id="header"></div>
+
+    <main class="section">
+      <div class="container">
+        <article class="news-article-shell" data-news-article>
+          <header class="section-head premium-section-head premium-page-head">
+            <span class="section-eyebrow" data-article-category>News</span>
+            <h1 data-article-title>Loading article…</h1>
+            <p class="news-article-date" data-article-date></p>
+          </header>
+
+          <div class="hero-media premium-hero-media">
+            <img
+              src=""
+              alt=""
+              class="premium-hero-image"
+              loading="lazy"
+              data-article-image
+            />
+          </div>
+
+          <section class="news-article-body" data-article-body></section>
+
+          <section class="news-related-section">
+            <div class="section-head premium-section-head">
+              <span class="section-eyebrow">More Updates</span>
+              <h2>Related Articles</h2>
+            </div>
+
+            <div
+              class="premium-content-grid premium-content-grid-3 news-grid"
+              data-related-news
+            ></div>
+          </section>
+
+          <section class="news-article-meta">
+            <div class="premium-cta-row">
+              <a class="btn premium-btn" href="/news.html">Back to News</a>
+              <a class="btn btn-ghost premium-btn-ghost" href="/contact.html">
+                Contact Us
+              </a>
+            </div>
+          </section>
+        </article>
+
+        <p class="muted small" data-error role="status"></p>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/news-article.page.js"></script>
+  </body>
+  <div class="news-share">
+    <span>Share:</span>
+    <a id="shareLinkedIn" target="_blank">LinkedIn</a>
+    <a id="shareTwitter" target="_blank">X</a>
+    <a id="shareWhatsapp" target="_blank">WhatsApp</a>
+  </div>
+</html>

@@ -1,0 +1,66 @@
+{
+  "projects": [
+    {
+      "id": "solar-streetlights-delta",
+      "title": "Solar Street Lighting Deployment",
+      "short": "Solar streetlights at Oguma Junction, Kwale",
+      "description": "Deployed solar powered street lights at Oguma junction and main road, Kwale.",
+      "tags": ["Renewable Energy", "Public Infrastructure", "NDDC"],
+      "media": [
+        {
+          "src": "/assets/img/projects/streetlight.jpg",
+          "alt": "Solar streetlight installation",
+          "caption": "Installed solar streetlights to improve safety and night visibility."
+        },
+        {
+          "src": "/assets/img/projects/DTStreetLight.jpg",
+          "alt": "Deployment worksite view",
+          "caption": "Commissioned solar streetlights."
+        },
+        {
+          "src": "/assets/img/projects/DTStreetLight2.jpg",
+          "alt": "Streetlight deployment view",
+          "caption": "Completed solar streetlight deployed at Kwale."
+        }
+      ]
+    },
+    {
+      "id": "osubi-airport-digital-advert-boards",
+      "title": "Deployment of Digital Advert Boards",
+      "short": "LED digital advert boards for Osubi Airport",
+      "description": "Fully deployed LED digital advert boards for Osubi Airport.",
+      "tags": ["Partnership", "Adverts", "Safety"],
+      "media": [
+        {
+          "src": "/assets/img/projects/LED-Osubi.jpg",
+          "alt": "Digital advert board at Osubi Airport",
+          "caption": "Deployed LED digital advert board inside Osubi Airport."
+        },
+        {
+          "src": "/assets/img/projects/Osubi-LED.mp4",
+          "alt": "Advert board installation view",
+          "caption": "Deployed Digital Advert Boards."
+        }
+      ]
+    },
+    {
+      "id": "osubi-vvip-terminal-security-equipment",
+      "title": "Osubi Airport VVIP Lounge Security Scanners",
+      "short": "3D X-Ray baggage scanner + walkthrough metal detector",
+      "description": "Partnered with Osubi Airport (Warri) for the supply and installation of a 3D X-Ray baggage scanner and a walkthrough metal detector.",
+      "tags": ["Sourcing", "Installation", "Partnerships"],
+      "media": [
+        {
+          "src": "/assets/img/projects/osubi-security-1.jpg",
+          "alt": "Security screening equipment installation",
+          "caption": "AI 3D X-Ray Baggage security screening equipment."
+        },
+        {
+          "src": "/assets/img/projects/osubi-security-2.jpg",
+          "alt": "3D X-Ray Baggage Scanner",
+          "caption": "VVIP 3D X-Ray Baggage Scanner."
+        }
+      ]
+    }
+  ]
+}

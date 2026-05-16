@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vinley Global Ltd | Contact</title>
+    <!-- Bootstrap first -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Optional: remove this unless you specifically need it -->
+    <!-- <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" /> -->
+
+    <!-- Your site styles LAST so they override Bootstrap -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </head>
+  <body data-page="contact">
+    <div id="header"></div>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>
+            Tell us what you are building or the services you want. We will
+            respond with a clear path forward.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+
+            <!-- Honeypot anti-spam (should remain empty). Hidden from humans. -->
+            <div
+              style="
+                position: absolute;
+                left: -10000px;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+              "
+            >
+              <label for="company">Company</label>
+              <input
+                id="company"
+                name="company"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <button class="btn" id="submitBtn" type="submit">
+              <span class="btn-text">Send</span>
+              <span
+                class="spinner-border spinner-border-sm ms-2 d-none"
+                role="status"
+                aria-hidden="true"
+              ></span>
+            </button>
+
+            <p class="muted small mt-2" id="formStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="card">
+            <h3 class="card-title">Vinley Global Ltd</h3>
+            <p class="muted">Innovation & Services with a Global Reach</p>
+            <div class="contact-items">
+              <div>
+                <div class="contText">Email:</div>
+                <div class="muted small" data-contact-email>Loading…</div>
+              </div>
+              <div>
+                <div class="contText">Phone:</div>
+                <div class="muted small">
+                  +1-651-890-7887 or +234-8073728225
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted small_topics" data-error></p>
+      </div>
+    </main>
+
+    <script>
+      const CONTACT_API_URL =
+        "https://ttwp5hbud7.execute-api.us-east-1.amazonaws.com/vinley-contact-form";
+
+      const form = document.getElementById("contactForm");
+      const statusEl = document.getElementById("formStatus");
+      const submitBtn = document.getElementById("submitBtn");
+      const spinner = submitBtn.querySelector(".spinner-border");
+      const btnText = submitBtn.querySelector(".btn-text");
+
+      function setStatus(msg, type = "info") {
+        statusEl.textContent = msg;
+        statusEl.classList.remove(
+          "text-success",
+          "text-danger",
+          "text-warning",
+        );
+        if (type === "success") statusEl.classList.add("text-success");
+        if (type === "error") statusEl.classList.add("text-danger");
+        if (type === "warn") statusEl.classList.add("text-warning");
+      }
+
+      function setLoading(isLoading) {
+        submitBtn.disabled = isLoading;
+        spinner.classList.toggle("d-none", !isLoading);
+        btnText.textContent = isLoading ? "Sending" : "Send";
+      }
+
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email || "").trim());
+      }
+
+      function getPayload() {
+        return {
+          name: document.getElementById("name").value.trim(),
+          email: document.getElementById("email").value.trim(),
+          message: document.getElementById("message").value.trim(),
+          // honeypot:
+          company: document.getElementById("company").value.trim(),
+        };
+      }
+
+      function markInvalid(el, isInvalid) {
+        el.classList.toggle("is-invalid", isInvalid);
+      }
+
+      function validate(payload) {
+        const nameEl = document.getElementById("name");
+        const emailEl = document.getElementById("email");
+        const msgEl = document.getElementById("message");
+
+        const nameBad = !payload.name;
+        const emailBad = !payload.email || !isValidEmail(payload.email);
+        const msgBad = !payload.message;
+
+        markInvalid(nameEl, nameBad);
+        markInvalid(emailEl, emailBad);
+        markInvalid(msgEl, msgBad);
+
+        if (nameBad || emailBad || msgBad) {
+          setStatus("Please fix the highlighted fields and try again.", "warn");
+          return false;
+        }
+        return true;
+      }
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        if (submitBtn.disabled) return; // prevent double-submit
+
+        const payload = getPayload();
+
+        // Honeypot: if filled, silently accept to discourage bots
+        if (payload.company) {
+          setStatus("Message sent. We will respond shortly.", "success");
+          form.reset();
+          return;
+        }
+
+        if (!validate(payload)) return;
+
+        setLoading(true);
+        setStatus("Sending...", "info");
+
+        try {
+          const res = await fetch(CONTACT_API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: payload.name,
+              email: payload.email,
+              message: payload.message,
+            }),
+          });
+
+          const data = await res.json().catch(() => ({}));
+
+          if (!res.ok || !data.ok) {
+            console.error("Contact API error:", res.status, data);
+            setStatus(
+              data?.error || "We couldn’t send your message. Please try again.",
+              "error",
+            );
+            return;
+          }
+
+          setStatus("Message sent. We will respond shortly.", "success");
+          form.reset();
+        } catch (err) {
+          console.error("Network error:", err);
+          setStatus("Network error. Please try again.", "error");
+        } finally {
+          setLoading(false);
+        }
+      });
+    </script>
+
+    <div id="footer"></div>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

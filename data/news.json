@@ -1,0 +1,102 @@
+{
+  "items": [
+    {
+      "id": "vinley-launches-news-page",
+      "title": "Vinley Global Launches News & Updates Page",
+      "category": "Corporate",
+      "date": "2026-04-22",
+      "readTime": "3 min read",
+      "featured": false,
+      "image": "/assets/img/news/news-update-launch.png",
+      "summary": "Vinley Global has launched a dedicated News & Updates page to highlight major project milestones, strategic announcements, and business developments.",
+      "body": [
+        "Vinley Global Ltd has launched a dedicated News & Updates page as part of its ongoing effort to improve corporate communication and strengthen visibility across its core service areas.",
+        "The new page is designed to provide a structured channel for sharing project milestones, partnership announcements, leadership developments, and selected business updates relevant to clients, partners, and stakeholders.",
+        "By introducing a centralized news platform, the company aims to present updates in a more accessible and consistent format while supporting its broader digital presence.",
+        "The rollout reflects Vinley Global’s commitment to transparency, professionalism, and stronger engagement across engineering, healthcare, energy, and infrastructure-related activities."
+      ]
+    },
+    {
+      "id": "rita-ifidon-joins-vinley-global",
+      "title": "Rita Ifidon Joins Vinley Global in Strategic Leadership Role",
+      "tag": ["Leadership", "Corporate", "Governance"],
+      "category": "Corporate",
+      "date": "2026-04-23",
+      "readTime": "3 min read",
+      "featured": true,
+      "image": "/assets/img/leadership/rita-ifidon.png",
+      "summary": "Vinley Global Ltd announces the appointment of Rita Ifidon, strengthening its leadership team and supporting continued growth across engineering, healthcare, and energy services.",
+      "body": [
+        "Vinley Global Ltd is pleased to announce the appointment of Rita Ifidon as Exec Director - Accounting/Finance, who joins the company to support strategic growth, operational alignment, and execution across key service areas.",
+        "Rita Ifidon brings extensive experience in leadership, stakeholder engagement, and organizational development, with a track record of supporting business transformation and operational efficiency across complex environments.",
+        "Her appointment reinforces Vinley Global’s commitment to strengthening its leadership structure as the company continues to expand its footprint across engineering services, healthcare solutions, and energy logistics.",
+        "In her role, Rita will contribute to strategic planning, partnership development, and internal capability strengthening, supporting the company’s focus on disciplined execution and long-term value creation.",
+        "This addition reflects Vinley Global’s continued investment in leadership depth to support sustainable growth and delivery excellence across its operations."
+      ]
+    },
+    {
+      "id": "osubi-led-board-deployment-update",
+      "title": "Digital Advert Board Deployment Completed at Osubi Airport",
+      "category": "Projects",
+      "date": "2026-04-18",
+      "readTime": "4 min read",
+      "featured": false,
+      "image": "/assets/img/projects/LED-Osubi.jpg",
+      "summary": "Vinley Global completed deployment of LED digital advert boards at Osubi Airport, expanding visibility solutions in a high-traffic aviation environment.",
+      "body": [
+        "Vinley Global has completed the deployment of LED digital advert boards at Osubi Airport, including coverage for key high-visibility zones within the airport environment.",
+        "The installation forms part of the company’s broader delivery work in digital infrastructure and site-based visibility solutions, with emphasis on durability, positioning, and operational readiness.",
+        "The deployment was executed to support strong visual reach in a high-traffic transit location while maintaining structured installation and alignment standards.",
+        "This milestone reinforces Vinley Global’s capability to deliver integrated projects that combine physical deployment, logistics coordination, and commercial infrastructure support."
+      ]
+    },
+    {
+      "id": "medical-equipment-capability-expansion",
+      "title": "Medical Equipment Delivery Capability Expanded",
+      "category": "Healthcare",
+      "date": "2026-04-12",
+      "readTime": "5 min read",
+      "featured": false,
+      "image": "/assets/img/news/news-med-equip.png",
+      "summary": "The company continues to strengthen its healthcare solutions offering through expanded medical equipment sourcing, installation, and commissioning support.",
+      "body": [
+        "Vinley Global continues to strengthen its healthcare solutions offering through expanded support for medical equipment sourcing, delivery coordination, installation, and commissioning readiness.",
+        "The company’s healthcare capability is structured to support hospitals, institutions, and public health programs that require dependable equipment deployment aligned with operational and compliance expectations.",
+        "This expansion reflects a continued focus on project discipline, logistics coordination, and fit-for-purpose delivery in clinical environments.",
+        "The company remains committed to supporting improved facility readiness and long-term service delivery through practical, execution-focused healthcare support."
+      ]
+    },
+    {
+      "id": "engineering-delivery-readiness-focus",
+      "title": "Engineering Delivery Readiness Remains a Core Priority",
+      "category": "Engineering",
+      "date": "2026-04-08",
+      "readTime": "4 min read",
+      "featured": false,
+      "image": "/assets/img/news/news-engr-ready.png",
+      "summary": "Vinley Global continues to align engineering advisory with execution readiness, documentation quality, and project delivery assurance.",
+      "body": [
+        "Vinley Global continues to strengthen its engineering support model around delivery readiness, requirements definition, and compliance-aligned project execution.",
+        "This focus supports clients that require practical engineering input tied closely to implementation discipline and operational outcomes.",
+        "The company’s engineering work emphasizes structured review, traceable documentation, and better decision support throughout project development and delivery.",
+        "The approach reinforces Vinley Global’s role as a partner focused not only on planning but also on practical execution assurance."
+      ]
+    },
+    {
+      "id": "energy-logistics-positioning-update",
+      "title": "Energy Logistics Capability Continues to Expand",
+      "category": "Energy",
+      "date": "2026-04-03",
+      "readTime": "4 min read",
+      "featured": false,
+      "image": "/assets/img/news/news-energy-logistics.png",
+      "summary": "Vinley Global continues to deepen its positioning across energy logistics, transaction coordination, and execution support.",
+      "body": [
+        "Vinley Global continues to advance its energy logistics capability through structured support for supply coordination, delivery planning, and commercial execution.",
+        "The company’s approach emphasizes documentation readiness, stakeholder coordination, and practical alignment between transaction structure and delivery needs.",
+        "This capability supports the firm’s broader positioning across oil and gas, marine logistics, and related energy operations.",
+        "The development reflects Vinley Global’s continued focus on disciplined business execution across strategic sectors."
+      ]
+    }
+  ]
+}

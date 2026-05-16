@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vinley Global Ltd | Projects</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </head>
+
+  <body data-page="projects">
+    <div id="header"></div>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-head premium-section-head premium-page-head">
+          <span class="section-eyebrow">Project Portfolio</span>
+          <h1>Representative Work</h1>
+          <p>
+            Explore selected Vinley Global projects across infrastructure,
+            energy, healthcare, and integrated delivery environments.
+          </p>
+        </div>
+
+        <section class="projects-carousel-section">
+          <div class="projects-toolbar">
+            <div class="projects-filter-group">
+              <label
+                for="projectFilter"
+                class="muted small projects-filter-label"
+              >
+                Filter projects:
+              </label>
+
+              <select
+                id="projectFilter"
+                class="form-select projects-filter-select"
+              >
+                <option value="all">All projects</option>
+              </select>
+            </div>
+
+            <div
+              class="muted small projects-filter-hint"
+              id="projectFilterHint"
+            >
+              Select a project to view its media in the carousel.
+            </div>
+          </div>
+
+          <div
+            id="vinleyProjectsCarousel"
+            class="carousel slide vinley-carousel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+            <div class="carousel-inner" id="carouselInner"></div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#vinleyProjectsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#vinleyProjectsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="projects-grid-section">
+          <div class="section-head premium-section-head">
+            <span class="section-eyebrow">Project Portfolio</span>
+            <h2>Representative Work</h2>
+          </div>
+
+          <div
+            class="premium-content-grid premium-content-grid-3 projects-grid"
+            data-projects
+          ></div>
+          <p class="muted small" data-error role="status"></p>
+        </section>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+    <script type="module" src="/assets/js/main.js"></script>
+  </body>
+</html>

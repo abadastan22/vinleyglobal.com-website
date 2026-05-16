@@ -1,0 +1,115 @@
+/* assets/css/leadership.css */
+
+.team-block + .team-block {
+  padding-top: 0.5rem;
+}
+
+.person-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+
+  /* NEW: ensures consistent card structure */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.person-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.person-link {
+  display: flex; /* NEW */
+  flex-direction: column; /* NEW */
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+.person-photo-wrap {
+  aspect-ratio: 4 / 3;
+  background: #f4f5f7;
+  overflow: hidden;
+}
+
+.person-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* NEW: prevents heads from being cut off */
+  object-position: center top;
+
+  display: block;
+}
+
+.person-meta {
+  padding: 0.9rem 0.95rem 1rem;
+
+  /* NEW: keeps the text block aligned consistently */
+  margin-top: auto;
+}
+
+.person-name {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+
+  /* Optional: helps alignment if names wrap differently */
+  min-height: 2.4em;
+}
+
+.person-title {
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(0, 0, 0, 0.6);
+
+  /* Optional: helps alignment if titles wrap differently */
+  min-height: 2.6em;
+}
+
+/* Example: adjust Kelvin’s photo cropping if needed */
+/* img[src*="kelvin-esemomoh"] {
+  object-position: center 15%;
+} */
+
+/* Leadership Grid */
+.leadership-grid {
+  align-items: stretch;
+}
+
+.leadership-premium-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.leadership-card-image-wrap {
+  margin: -1.35rem -1.15rem 1rem;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.leadership-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 767.98px) {
+  .leadership-card-image-wrap {
+    margin: -1.15rem -1rem 1rem;
+  }
+}
