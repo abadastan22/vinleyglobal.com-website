@@ -184,7 +184,7 @@ function renderService(p) {
         <path d="M9 12h6"></path>
       </svg>
     `,
-    "Oil & Gas & Marine Logistics": `
+    "Upstream Oil & Gas Marine Support": `
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 18h18"></path>
         <path d="M6 18l2-6h8l2 6"></path>
@@ -197,13 +197,13 @@ function renderService(p) {
   const serviceKickers = {
     "Engineering Services": "Integrated Delivery",
     "Medical Equipment Supply & Installations": "Healthcare Solutions",
-    "Oil & Gas & Marine Logistics": "Energy & Transport",
+    "Upstream Oil & Gas Marine Support": "Vessel Charter & Rental",
   };
 
   const serviceTypeClasses = {
     "Engineering Services": "svc-engineering",
     "Medical Equipment Supply & Installations": "svc-medical",
-    "Oil & Gas & Marine Logistics": "svc-energy",
+    "Upstream Oil & Gas Marine Support": "svc-energy",
   };
 
   const title = p?.title || "Service";

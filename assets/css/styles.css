@@ -1,5 +1,5 @@
 /* =========================================================
-   Vinley Global Ltd — Site Styles (Bootstrap-safe)
+   Vinley Global Ltd - Site Styles (Bootstrap-safe)
    - Designed to work with Bootstrap without breaking layout
    - Load AFTER Bootstrap in HTML
    ========================================================= */
@@ -1141,12 +1141,58 @@ textarea:focus {
   }
 }
 
+
+.premium-content-grid-2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .premium-content-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (min-width: 1200px) {
   .premium-content-grid-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
+
+.about-capabilities-grid {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .about-capabilities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-capabilities-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .about-capabilities-grid > .premium-content-card {
+    grid-column: span 2;
+  }
+
+  .about-capabilities-grid > .premium-content-card:nth-last-child(-n + 2) {
+    grid-column: span 3;
+  }
+}
+
+.service-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-card-link:hover,
+.service-card-link:focus-visible {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
 .premium-content-card {
   height: 100%;
 }
