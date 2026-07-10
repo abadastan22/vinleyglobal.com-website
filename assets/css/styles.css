@@ -716,6 +716,57 @@ textarea:focus {
 .footer-links a:hover {
   color: var(--text);
 }
+.footer-partners {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-partner {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.footer-logo-list {
+  align-items: center;
+}
+
+.footer-partner-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 46px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+.footer-partner-logo-wide {
+  width: 132px;
+}
+
+.footer-partner-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
 /* -----------------------------
    Dropdowns
