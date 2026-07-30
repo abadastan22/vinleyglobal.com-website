@@ -15,6 +15,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <style>
+      .service-division {
+        margin-bottom: 2.5rem;
+      }
+
+      .service-division-head {
+        margin-bottom: 1.25rem;
+      }
+
+      .service-division-head h2 {
+        margin-bottom: 0.35rem;
+      }
+
+      .service-division-head p {
+        margin-bottom: 0;
+      }
+
+      .service-division-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+      }
+
+      .service-division-grid .service-card {
+        position: relative;
+        cursor: pointer;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .service-division-grid .service-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .service-card-title-link {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .service-card-title-link:focus-visible {
+        outline: 3px solid currentColor;
+        outline-offset: 4px;
+        border-radius: 2px;
+      }
+
+      @media (max-width: 767.98px) {
+        .service-division-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -27,9 +79,10 @@
       <div class="container">
         <div class="section-head premium-section-head premium-page-head">
           <span class="section-eyebrow">Vinley Global Ltd</span>
-          <h1>
-            Consulting | Project Management | Renewable Energy
-          </h1>
+          <h2>
+            Consulting | Project Management | Renewable Energy | Medical
+            Equipment
+          </h2>
           <p>
             Vinley Global Ltd supports clients in all aspect of engineering
             services that convert strategic objectives into execution-ready
@@ -47,117 +100,228 @@
           />
         </div>
 
-        <div class="premium-content-grid premium-content-grid-3 mb-4">
-          <article
-            class="service-card premium-service-card premium-content-card svc-engineering"
-          >
-            <div class="service-card-top">
-              <div class="service-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M9 17l-4 4v-4H1V3h16v14H9z"></path>
-                  <path d="M6 7h6"></path>
-                  <path d="M6 11h8"></path>
-                </svg>
-              </div>
-              <div class="service-heading">
-                <h3>Consulting</h3>
-                <span class="service-kicker">Technical Advisory</span>
-              </div>
-            </div>
-
+        <section
+          class="service-division"
+          aria-labelledby="consulting-project-management-division"
+        >
+          <div class="service-division-head">
+            <span class="section-eyebrow">Division 01</span>
+            <h2 id="consulting-project-management-division">
+              Consulting &amp; Project Management
+            </h2>
             <p>
-              Independent reviews, technical assessments, and standards
-              compliance support for capital projects.
+              Advisory, planning, governance, and execution support for complex
+              programs and capital projects.
             </p>
+          </div>
 
-            <ul class="bullets premium-bullets">
-              <li>Feasibility and technical due diligence support</li>
-              <li>Requirements definition and scope validation</li>
-              <li>Standards, compliance, and delivery-readiness reviews</li>
-            </ul>
-          </article>
-
-          <article
-            class="service-card premium-service-card premium-content-card svc-engineering"
-          >
-            <div class="service-card-top">
-              <div class="service-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M4 19h16"></path>
-                  <path d="M7 19V9"></path>
-                  <path d="M12 19V5"></path>
-                  <path d="M17 19v-7"></path>
-                </svg>
+          <div class="service-division-grid">
+            <article
+              class="service-card premium-service-card premium-content-card svc-engineering"
+            >
+              <div class="service-card-top">
+                <div class="service-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"></path>
+                    <circle cx="12" cy="12" r="1"></circle>
+                  </svg>
+                </div>
+                <div class="service-heading">
+                  <h3>
+                    <a
+                      href="/pages/consulting.html"
+                      class="service-card-title-link stretched-link"
+                      aria-label="View Consulting services"
+                    >
+                      Consulting
+                    </a>
+                  </h3>
+                  <span class="service-kicker">Technical Advisory</span>
+                </div>
               </div>
-              <div class="service-heading">
-                <h3>Project Management</h3>
-                <span class="service-kicker">Project Controls</span>
-              </div>
-            </div>
 
+              <p>
+                Independent reviews, technical assessments, and standards
+                compliance support for capital projects.
+              </p>
+
+              <ul class="bullets premium-bullets">
+                <li>Feasibility and technical due diligence support</li>
+                <li>Requirements definition and scope validation</li>
+                <li>Standards, compliance, and delivery-readiness reviews</li>
+              </ul>
+            </article>
+
+            <article
+              class="service-card premium-service-card premium-content-card svc-engineering"
+            >
+              <div class="service-card-top">
+                <div class="service-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="4" y="5" width="16" height="16" rx="2"></rect>
+                    <path d="M8 3v4"></path>
+                    <path d="M16 3v4"></path>
+                    <path d="M4 10h16"></path>
+                    <path d="M8 14h3"></path>
+                    <path d="M8 17h7"></path>
+                  </svg>
+                </div>
+                <div class="service-heading">
+                  <h3>
+                    <a
+                      href="/pages/project-mgt.html"
+                      class="service-card-title-link stretched-link"
+                      aria-label="View Project Management services"
+                    >
+                      Project Management
+                    </a>
+                  </h3>
+                  <span class="service-kicker">Project Controls</span>
+                </div>
+              </div>
+
+              <p>
+                Integrated project controls, risk management, and execution
+                support for complex projects.
+              </p>
+
+              <ul class="bullets premium-bullets">
+                <li>Risk, interface, and dependency management</li>
+                <li>Procurement readiness and implementation sequencing</li>
+                <li>Stakeholder coordination and execution assurance</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="service-division"
+          aria-labelledby="energy-medical-equipment-division"
+        >
+          <div class="service-division-head">
+            <span class="section-eyebrow">Division 02</span>
+            <h2 id="energy-medical-equipment-division">
+              Renewable Energy &amp; Medical Equipment
+            </h2>
             <p>
-              Integrated project controls, risk management, and execution
-              support for complex projects.
+              Sustainable energy and healthcare equipment solutions spanning
+              design, supply, deployment, and lifecycle support.
             </p>
+          </div>
 
-            <ul class="bullets premium-bullets">
-              <li>Risk, interface, and dependency management</li>
-              <li>Procurement readiness and implementation sequencing</li>
-              <li>Stakeholder coordination and execution assurance</li>
-            </ul>
-          </article>
-
-          <article
-            class="service-card premium-service-card premium-content-card svc-engineering"
-          >
-            <div class="service-card-top">
-              <div class="service-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 3v18"></path>
-                  <path
-                    d="M7 8c0-2.5 2-4 5-4s5 1.5 5 4-2 4-5 4-5 1.5-5 4 2 4 5 4 5-1.5 5-4"
-                  ></path>
-                </svg>
+          <div class="service-division-grid">
+            <article
+              class="service-card premium-service-card premium-content-card svc-engineering"
+            >
+              <div class="service-card-top">
+                <div class="service-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="8" cy="8" r="3"></circle>
+                    <path d="M8 2v1"></path>
+                    <path d="M8 13v1"></path>
+                    <path d="M2 8h1"></path>
+                    <path d="M13 8h1"></path>
+                    <path d="M3.8 3.8l.7.7"></path>
+                    <path d="M11.5 11.5l.7.7"></path>
+                    <path d="M3.8 12.2l.7-.7"></path>
+                    <path d="M11.5 4.5l.7-.7"></path>
+                    <path d="M13 21c0-5 3-8 8-9 0 5-3 8-8 9z"></path>
+                    <path d="M13 21c1-3 3-5 6-7"></path>
+                  </svg>
+                </div>
+                <div class="service-heading">
+                  <h3>
+                    <a
+                      href="/pages/renewable-energy.html"
+                      class="service-card-title-link stretched-link"
+                      aria-label="View Renewable Energy services"
+                    >
+                      Renewable Energy
+                    </a>
+                  </h3>
+                  <span class="service-kicker">Sustainable Energy</span>
+                </div>
               </div>
-              <div class="service-heading">
-                <h3>Renewable Energy</h3>
-                <span class="service-kicker">Sustainable Energy</span>
+
+              <p>
+                Feasibility studies, system design, and implementation support
+                for renewable energy projects.
+              </p>
+
+              <ul class="bullets premium-bullets">
+                <li>Solar and hybrid energy planning support</li>
+                <li>System design coordination and deployment readiness</li>
+                <li>Lifecycle performance and reliability planning</li>
+              </ul>
+            </article>
+            <article
+              class="service-card premium-service-card premium-content-card svc-engineering"
+            >
+              <div class="service-card-top">
+                <div class="service-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="5" width="18" height="15" rx="2"></rect>
+                    <path d="M9 5V3h6v2"></path>
+                    <path d="M12 9v7"></path>
+                    <path d="M8.5 12.5h7"></path>
+                  </svg>
+                </div>
+                <div class="service-heading">
+                  <h3>
+                    <a
+                      href="/pages/med-equipment.html"
+                      class="service-card-title-link stretched-link"
+                      aria-label="View Medical Equipment services"
+                    >
+                      Medical Equipment
+                    </a>
+                  </h3>
+                  <span class="service-kicker">Healthcare Solutions</span>
+                </div>
               </div>
-            </div>
 
-            <p>
-              Feasibility studies, system design, and implementation support for
-              renewable energy projects.
-            </p>
+              <p>
+                Feasibility studies, system design, and implementation support
+                for medical equipment projects.
+              </p>
 
-            <ul class="bullets premium-bullets">
-              <li>Solar and hybrid energy planning support</li>
-              <li>System design coordination and deployment readiness</li>
-              <li>Lifecycle performance and reliability planning</li>
-            </ul>
-          </article>
-        </div>
+              <ul class="bullets premium-bullets">
+                <li>Medical device design and development</li>
+                <li>Equipment supply and deployment</li>
+                <li>Calibration and maintenance support</li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
         <section
           class="section section-alt"
@@ -187,10 +351,14 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
-                      <path d="M4 6h16"></path>
-                      <path d="M4 12h16"></path>
-                      <path d="M4 18h10"></path>
-                    </svg>
+                      <path d="M6 3h12v18H6z"></path>
+                      <path d="M9 7h6"></path>
+                      <path d="M9 11h6"></path>
+                      <path d="M9 15h3"></path>
+                      <path d="M3 7h3"></path>
+                      <path d="M3 12h3"></path>
+                      <path d="M3 17h3"></path>
+                  </svg>
                   </div>
                   <div class="service-heading">
                     <h3>Engineering Basis &amp; Requirements</h3>
@@ -224,11 +392,10 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
-                      <path
-                        d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7l8-4z"
-                      ></path>
-                      <path d="M9.5 12.5l1.8 1.8 3.7-4.3"></path>
-                    </svg>
+                      <path d="M12 3L2.5 20h19L12 3z"></path>
+                      <path d="M12 9v5"></path>
+                      <circle cx="12" cy="17" r=".8" fill="currentColor" stroke="none"></circle>
+                  </svg>
                   </div>
                   <div class="service-heading">
                     <h3>Technical Risk Register</h3>
@@ -262,11 +429,13 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
-                      <path d="M3 19h18"></path>
-                      <path d="M7 16V8"></path>
-                      <path d="M12 16V5"></path>
-                      <path d="M17 16v-4"></path>
-                    </svg>
+                      <circle cx="5" cy="18" r="2"></circle>
+                      <circle cx="12" cy="11" r="2"></circle>
+                      <circle cx="19" cy="5" r="2"></circle>
+                      <path d="M6.5 16.5l4-4"></path>
+                      <path d="M13.5 9.5l4-3.5"></path>
+                      <path d="M14 5h5v5"></path>
+                  </svg>
                   </div>
                   <div class="service-heading">
                     <h3>Implementation Roadmap</h3>
@@ -289,7 +458,6 @@
             </div>
           </div>
         </section>
-
 
         <section style="margin-top: 18px">
           <div class="section-head premium-section-head">
